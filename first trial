@@ -33,12 +33,14 @@ class Main
   }
 }
 */
+/*
 class Main 
 {
   public static void main(String[] args) 
   {
  int x=5;
  int y=10;
-System.out.println("x is less than y");
+System.out.println(x+ "is less than"+ y);
   }
-}
+}    
+*/    
