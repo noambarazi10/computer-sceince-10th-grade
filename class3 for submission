@@ -67,22 +67,17 @@ class Main {
 /*
 class Main {
   public static void main(String[] args) {
-  //קיימת המשוואה הבאה: +5x2=y כתוב תוכנית המגדירה את x כרצונך(טיפוס שלם) ומדפיסה את
-y על פי הפונקציה.
     int x=5;
     int y=2*x+5;
-      System.out.println(y);
+      System.out.println("y="+y);
   }
 }
 */
 /*
 class Main {
   public static void main(String[] args) {
-    String sen1="I like to study computer science";
-    String sen2="and therefore ready to invest";
-    String sen3="hours a day for practice";
     int hours=24;
-    System.out.println(sen1+" "+sen2+" "+hours+" "+sen3);
+    System.out.println("i like to study computer science" + " and therfore ready to invest "+hours+" hours a day");
   } 
 }
 */
