@@ -173,3 +173,68 @@ public class Main {
         }
     }
 }
+תרגיל 7:
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Enter coordinates of the first point:");
+        System.out.print("x1: ");
+        double x1 = scanner.nextDouble();
+        System.out.print("y1: ");
+        double y1 = scanner.nextDouble();
+
+        System.out.println("Enter coordinates of the second point:");
+        System.out.print("x2: ");
+        double x2 = scanner.nextDouble();
+        System.out.print("y2: ");
+        double y2 = scanner.nextDouble();
+
+        scanner.close();
+
+        double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+        System.out.println("The distance between the points is: " + distance);
+    }
+}
+תרגיל 8:
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the radius of the circle: ");
+        double radius = scanner.nextDouble();
+
+        scanner.close();
+
+        double area = Math.PI * Math.pow(radius, 2);
+        double circumference = 2 * Math.PI * radius;
+
+        System.out.println("The area of the circle is: " + area);
+        System.out.println("The circumference of the circle is: " + circumference);
+    }
+}
+תרגיל 9:
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the length of the first side: ");
+        double side1 = scanner.nextDouble();
+
+        System.out.print("Enter the length of the second side: ");
+        double side2 = scanner.nextDouble();
+
+        scanner.close();
+
+        double hypotenuse = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
+
+        System.out.println("The length of the hypotenuse is: " + hypotenuse);
+    }
+}
