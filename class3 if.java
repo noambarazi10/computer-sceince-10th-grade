@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+תרגיל 1:
 public class Main {
     public static void main(String[] args) {
         Scanner scanner=new Scanner(System.in);
@@ -15,6 +15,9 @@ public class Main {
         scanner.close();
     }
 }
+
+תרגיל 2:
+    
 import java.util.Scanner;
 
 public class Main {
@@ -33,7 +36,9 @@ public class Main {
         }
         scanner.close();
     }
-    }
+}
+
+תרגיל 3:
 
 import java.util.Scanner;
 
@@ -65,6 +70,9 @@ public class Main {
         }
    }
 }    
+
+תרגיל 4:
+
 import java.util.Scanner;
 
 public class Main {
@@ -82,7 +90,65 @@ public class Main {
         scanner.close();
     }
 
+תרגיל 5:
+    import java.util.Scanner;
 
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("please enter three numbers");
+
+        int num1 = scanner.nextInt();
+        int num2 = scanner.nextInt();
+        int num3 = scanner.nextInt();
+
+        int minNumber;
+
+        if (num1 <= num2 && num1 <= num3) {
+            minNumber = num1;
+        } else if (num2 <= num1 && num2 <= num3) {
+            minNumber = num2;
+        } else {
+            minNumber = num3;
+        }
+
+        System.out.println("the smallest number is: " + minNumber);
+
+        scanner.close();
+    }
+}
+
+תרגיל 6:
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter the coordinates of the first point:");
+        System.out.print("Point 1 - X coordinate: ");
+        double x1 = scanner.nextDouble();
+        System.out.print("Point 1 - Y coordinate: ");
+        double y1 = scanner.nextDouble();
+
+        System.out.println("Please enter the coordinates of the second point:");
+        System.out.print("Point 2 - X coordinate: ");
+        double x2 = scanner.nextDouble();
+        System.out.print("Point 2 - Y coordinate: ");
+        double y2 = scanner.nextDouble();
+
+        double distance = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+
+        System.out.println("The distance between the points is: " + distance);
+
+        scanner.close();
+    }
+}
+
+תרגיל 7:
+    
 import java.util.Scanner;
 
 public class Main {
@@ -98,6 +164,8 @@ public class Main {
         System.out.println("The 10th number in the series is: "+Number_10);
     }
 } 
+
+תרגיל 8:
 
 import java.util.Scanner;
 public class Main
@@ -136,3 +204,54 @@ public class Main
         scanner.close();
     }
 }
+
+תרגיל 9:
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter your first name:");
+        String firstName = scanner.nextLine();
+
+        System.out.println("Please enter your last name:");
+        String lastName = scanner.nextLine();
+
+        System.out.println("Please enter your school name:");
+        String schoolName = scanner.nextLine();
+
+        System.out.println("Please enter the number of subjects you study:");
+        int numberOfSubjects = scanner.nextInt();
+
+        System.out.println("My name is " + firstName + " " + lastName + ", My school is " + schoolName + ", The number of subjects I study is " + numberOfSubjects + ".");
+
+        scanner.close();
+    }
+}
+תרגיל 10:
+    import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please enter a three-digit number:");
+        int number = scanner.nextInt();
+
+        if (number >= 100 && number <= 999) {
+            int digit1 = number % 10;          
+            int digit2 = (number / 10) % 10;
+            int digit3 = number / 100;          
+
+            int sum = digit1 + digit2 + digit3;
+
+            System.out.println("The sum of the digits is: " + sum);
+        } else {
+            System.out.println("something went wrong");
+        }
+
+        scanner.close();
+    }
+}
+
