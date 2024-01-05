@@ -4,9 +4,9 @@ class Main {
     int y=4;
     int x=5;
     int a=8;
-    System.out.println("y");
-     System.out.println("x");
-       System.out.println("a");
+    System.out.println(y);
+     System.out.println(x);
+       System.out.println(a);
    }
   }
 */
@@ -15,8 +15,8 @@ class Main {
 *public static void main(String[] args) {
   int z=5;
   double y=10.0;
-  System.out.println("z");
-  System.out.println("y");
+  System.out.println(z);
+  System.out.println(y);
    }
 }
   */
@@ -29,7 +29,7 @@ class Main
    char let2='o';
    char let3='a';
    char let4='m';
-   System.out.println(let1+""+let2+let3+let4);
+   System.out.println(let1+let2+let3+let4);
   }
 }
 */
