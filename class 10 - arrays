@@ -1,0 +1,150 @@
+public class Main {
+    public static void array_input(int[] array, int index) {
+        int last_Index = array.length - 1;
+        if (index <= last_Index) {
+            if (index % 2 != 0) {
+                index -= 1;
+            }
+        }
+        else {
+            System.out.println("Error");
+        }
+    }
+    public static void main(String[] args) {
+        int[] array = {1,2,3,4,5,6};
+        array_input(array, 5);
+    }
+} 
+
+ import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        array_ave();
+    }
+    public static void array_ave() {
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[5];
+        for (int i = 0; i < 5; i ++) {
+            System.out.println("Enter your grade");
+            array[i] = scanner.nextInt();
+        }
+        scanner.close();
+        int sum = 0;
+        for (int i = 0; i < array.length; i ++) {
+            sum += array[i];
+        }
+        sum = sum / array.length;
+        System.out.println("The array average is : " + sum);
+    }
+} 
+
+ import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(array_low());
+    }
+    public static int array_low() {
+        Scanner scanner = new Scanner(System.in);
+        int[] array = new int[5];
+        for (int i = 0; i < 5; i ++) {
+            System.out.println("Enter a grade");
+            array[i] = scanner.nextInt();
+        }
+        scanner.close();
+
+        int lowest_Grade = array[0];
+        for (int i = 1; i < array.length; i ++) {
+            if (array[i] < lowest_Grade) {
+                lowest_Grade = array[i];
+            }
+        }
+        return lowest_Grade;
+    }
+} 
+
+ public class Main {
+    public static void main(String[] args) {
+        int[] array1 = {1,2,3,4,5,6,7,8,10,10};
+        array_odd(array1);
+    }
+    public static void array_odd(int[] array) {
+        for (int i = 0; i < array.length - 1; i ++) {
+            if ((array[i] + array[i + 1]) % 2 != 0) {
+                System.out.print(array[i] + " " + array[i + 1]);
+                System.out.println();
+        }
+    }
+  }
+} 
+
+ import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println(array_rand(5));
+    }
+    public static boolean array_rand(int num_To_Check) {
+        int[] array = new int[10];
+        Random rand = new Random();
+        for (int i = 0; i < array.length; i ++) {
+            int num = rand.nextInt(101);
+            array[i] = num;
+        }
+        for (int i = 0; i < array.length; i ++) {
+            if (num_To_Check != array[i] ) {
+                return false;
+            }
+        }
+        return true;
+    }
+} 
+
+ import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        array_Rand_Even();   
+    }
+    public static void array_Rand_Even() {
+        int[] array = new int[10];
+        Random rand = new Random();
+        for (int i = 0; i < array.length; i ++) {
+            array[i] = rand.nextInt();
+        }
+        for (int i = 0; i < array.length - 1; i ++) {
+            if ((array[i] + array[i + 1]) % 2 == 0) {
+                System.out.println(array[i] + " " + array[i + 1]);
+            }
+        }
+    }
+} 
+
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        array_Num();
+    }
+    public static void array_Num() {
+        int[] array = new int[10];
+        Random random = new Random();
+        for (int i = 0; i < array.length; i ++) {
+            array[i] = random.nextInt();
+        }
+        int big_Num = array[0];
+        int index = 0;
+        for (int i = 0; i < array.length; i ++) {
+            if (array[i] > big_Num) {
+                big_Num = array[i];
+                index = i;
+            }
+        }
+        int last_index = array[array.length - 1];
+        array[index] = last_index;
+        array[array.length - 1] = big_Num;
+        for (int i = 0; i < array.length; i ++) {
+            System.out.print(array[i] + ", ");
+        }
+    }
+}
