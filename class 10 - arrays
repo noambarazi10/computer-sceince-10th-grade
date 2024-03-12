@@ -170,3 +170,38 @@ public class Main {
             return -1;
     }
 }
+
+public class Main {
+    public static void main(String[] args) {
+        String[] arr1 = {"aba","saba" ,"ana" ,"rony", "shuki"};
+        sum(arr1,'a');
+    }
+    public static void sum(String[] array, char let) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i ++) {
+            for (int j = 0; j < array[i].length(); j ++) {
+                char letter = array[i].charAt(j);
+                if (let == letter) {
+                    sum ++;
+                }
+            }
+        }
+        System.out.println(sum);
+  }
+}
+
+public class Main {
+    public static void main(String[] args) {
+      int[] arr1 = {1,2,3,4,5};
+      times(arr1, 2);  
+    }
+    public static void times(int[] array, int num) {
+        int sum = 0;
+        for (int i = 0; i < array.length; i ++) {
+            if (array[i] > num) {
+                sum ++;
+            }
+        }
+        System.out.println(sum);
+    }
+}
