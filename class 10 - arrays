@@ -148,3 +148,25 @@ public class Main {
         }
     }
 }
+
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {4, -2, 3, 9, 8, -3};
+        System.out.println(array1(array));
+    }
+    public static int array1(int[] array) {
+        int left_Equasion = 0;
+        int right_Equasion = 0;
+            for (int i = 0; i < array.length; i ++) {
+                left_Equasion += array[i];
+                right_Equasion = 0;
+                for (int j = array.length - 1; j > 0; j --) {
+                    right_Equasion += array[j];
+                    if (right_Equasion == left_Equasion) {
+                        return array[i + 1];
+                    }
+                }
+            }
+            return -1;
+    }
+}
