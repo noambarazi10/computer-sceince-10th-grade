@@ -235,6 +235,128 @@ public class Main {
         return min;
   }
 }
+
+
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        int[] array = new int[5];
+        Random random = new Random();
+        for (int i = 0; i < array.length; i ++) {
+            array[i] = random.nextInt(101);
+        }
+        arr(array);
+    }
+    public static void arr(int[] array) {
+        Random random = new Random();
+        int num = random.nextInt(101);
+        int index = -1;
+        for (int i = 0; i < array.length; i ++) {
+            if (array[i] == num) {
+                index = i;
+            }
+            else {
+                for (int j = 0; j < array.length; j ++) {
+                    System.out.print(array[j] + " ");
+                }
+                return;
+            }
+        }
+        for (int i = 0; i < array.length; i ++) {
+            System.out.print(array[i] + ", ");
+        }
+        for (int i = 0; i < array.length; i ++) {
+            if (i < index) {
+                continue;
+            }
+            else if (i > index) {
+                array[i - 1] = array[i];
+            }
+        }
+        array[array.length - 1] = 0;
+        for (int i = 0; i < array.length; i ++) {
+            System.out.print(array[i] + ",");
+        }
+        
+    }
+}
+
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        arr();
+    }
+    public static void arr() {
+        Random random = new Random();
+        int[] array = new int[30];
+        for (int i = 0; i < array.length; i ++) {
+            array[i] = random.nextInt(11);
+        }
+        for (int x = 0; x < array.length; x ++) {
+            System.out.print(array[x] + ", ");
+        }
+        int num = -1;
+        for (int i = 0; i < array.length; i ++) {
+            int count = 0;
+            num = array[i];
+            for (int k = 0; k < array.length; k ++) {
+                if (num == array[k]) {
+                    count ++;
+                }
+            }
+            if (count == 2) {
+                System.out.println(num);
+                array[i] = -1;
+            }
+        }
+    }
+}
+
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        arr();
+    }
+    public static void arr() {
+        int[] array = new int[10];
+        for (int i = 0; i < array.length; i ++) {
+            Random random = new Random();
+            array[i] = random.nextInt(101);
+        }
+        for (int i = 0; i < array.length; i ++) {
+            System.out.print(array[i] + ", ");
+        }
+
+        System.out.println();
+
+        for (int j = array.length - 1; j >= 0; j --) {
+            System.out.print(array[j] + ", ");
+        }
+    }
+}
+
+
+public class Main {
+    public static void main(String[] args) {
+        int[] array = {1,2,3,4,1};
+        System.out.println(symmetry(array));
+    }
+    public static boolean symmetry(int[] array) {
+        int right_Index = 0;
+        int left_Index = array.length - 1;
+        while (right_Index < left_Index) {
+            if (! (array[right_Index] == array[left_Index])) {
+                return false;
+            }
+            right_Index ++;
+            left_Index --;
+        }
+        return true;
+    }
+}
         }
         System.out.println(sum);
     }
