@@ -46,4 +46,18 @@ public class Student {
     }
 }
 
+תרגיל 3:
+
+public class Book {
+    private String name, author;
+    private int categoryNumber;
+    public Book(String name, String author, int categoryNumber) {
+        this.name = name;
+        this.author = author;
+        this.categoryNumber = categoryNumber;
+    }
+    public String toString() {
+        return name + " " + "Author: " + author + "category Number: " + categoryNumber;
+    }
+}
 
