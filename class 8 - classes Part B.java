@@ -54,3 +54,37 @@ public class AP {
     }
 }
 
+תרגיל 2:
+
+public class Student {
+    private int id;
+    private String privateName, lastName;
+    public Student(int id, String privateName, String lastName) {   
+        this.id = id;
+        this.privateName = privateName;  
+        this.lastName = lastName;
+    }
+    public String toString() {
+        return privateName + " " + lastName + " " + id;
+    }
+    public int getId() {
+        return id;
+    }
+    public String getPrivateName() {
+        return privateName;
+    }
+    public String getlastName() {
+        return lastName;
+    }
+    public void setId(int newId) {
+        id = newId;
+    }
+    public void setPrivateName(String nameN) {
+        privateName = nameN;
+    }
+    public void setLastName(String name1) {
+        lastName = name1;
+    }
+}
+
+תרגיל 3:
