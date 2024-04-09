@@ -64,6 +64,11 @@ public class Student {
         this.privateName = privateName;  
         this.lastName = lastName;
     }
+    public Student(Student other) {
+        id = other.id;
+        privateName = other.privateName;
+        lastName = other.lastName;
+    }
     public String toString() {
         return privateName + " " + lastName + " " + id;
     }
