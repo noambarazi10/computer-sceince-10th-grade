@@ -93,3 +93,45 @@ public class Student {
 }
 
 תרגיל 3:
+
+public class Book {
+    private String name, author;
+    private int categoryNumber;
+    public Book(String name, String author, int categoryNumber) {
+        this.name = name;
+        this.author = author;
+        this.categoryNumber = categoryNumber;
+    }
+    public Book(Book other) {
+        name = other.name;
+        author = other.author;
+        categoryNumber = other.categoryNumber;
+    }
+    public String toString() {
+        return name + " " + "Author: " + author + "category Number: " + categoryNumber;
+    }
+    public String getName() {
+        return name;
+    }
+    public String getAuthor() {
+        return author;
+    }
+    public int getcategoryNumber() {
+        return categoryNumber;
+    }
+    public void setName(String name1) {
+        name = name1;
+    }
+    public void setAuthor(String author1) {
+        author = author1;
+    }
+    public void setcategoryNumber(int categoryNumber1) {
+        categoryNumber = categoryNumber1;
+    }
+    public boolean book(int category) {
+        if (category == categoryNumber) {
+            return true;
+        }
+        return false;
+    } 
+}
